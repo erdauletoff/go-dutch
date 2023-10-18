@@ -10,11 +10,8 @@ public class GoDutch {
 
         if (bill < 0) System.out.print("Bill total amount cannot be negative");
         else if (n <= 0) System.out.print("Number of friends cannot be negative or zero");
-        else if (bill == 200 && n == 220) System.out.println(1);
         else {
-            int part = bill / n;
-            int percentage = part / 10;
-            System.out.println(percentage + part);
+            System.out.println((int) (bill * 1.1 / n));
         }
     }
 }
